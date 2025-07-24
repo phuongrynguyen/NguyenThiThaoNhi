@@ -1,0 +1,504 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: ghostwhite;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* header */
+.head {
+  width: 100vw;
+  height: 300px;
+}
+
+.head > img {
+  width: 100%;
+  height: 300px;
+}
+
+/* avatar */
+.avatar {
+  text-align: center;
+  z-index: 20;
+  margin-top: -5rem;
+}
+
+.avatar > img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+.avatar > h2 {
+  color: #111111;
+  font: 700;
+  font-size: 20px;
+  font-family: bold;
+  font-weight: 700;
+}
+
+.avatar > span {
+color: #333333;
+  font: 700;
+  font-size: 13px;
+  font-family: bold;
+  font-weight: 7000;
+}
+
+/* thông tin */
+.box-lick {
+  margin-top: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+
+.box-lick > div > li {
+  margin-top: 1.5rem;
+}
+
+/* thay đổi ảnh nền */
+.body {
+  background-image: url("share.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* btn */
+.Btn {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+}
+
+.Btn > .btn {
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #ffffff;
+}
+
+.Btn > .btn > span > i {
+  margin-right: .2rem;
+  color: #0099ff;
+  font-size: 25px;
+  filter: drop-shadow(0 0 2px #ffffff);
+}
+
+.daylog {
+  margin-bottom: 1rem;
+}
+
+.gl {
+  padding-left: 1rem;
+}
+
+.gl > h4 {
+  color: #333333;
+  font: 7;
+  font-size: 15px;
+  font-family: bold;
+  font-weight: 7000;
+}
+
+/* from bài viết */
+.from {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100vw;
+  height: auto;
+  background: #ffffff;
+}
+
+.fbs {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.fbs > .sl > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.sl {
+  display: flex;
+  gap: .4rem;
+}
+
+.div {
+  margin-top: .5rem;
+}
+
+.div>h3 {
+  font: 700;
+  font-size: 15px;
+  font-family: bold;
+  font-weight: 700;
+}
+
+.div>p {
+  color: #333333;
+  font: 6;
+  font-size: 12px;
+  font-family: tahoma;
+  font-weight: 7000;
+  margin-top: .5rem;
+}
+
+.txt {
+  margin-top: 1rem;
+}
+
+.ig {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: .2rem;
+}
+
+.ig > img {
+  width: 150px;
+  height: 150px;
+}
+
+.tb {
+  margin-top:.3rem;
+  display: none;
+}
+
+#push {
+  color: #333333;
+  cursor: pointer;
+}
+
+.IconFrom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+/* icon like */
+.like {
+  display: flex;
+  gap: .5rem;
+}
+
+.tb-icon {
+  transition-duration: 0.3s;
+}
+
+.tb-icons:hover {
+  color: #0999ff;
+  filter: drop-shadow(0 0 2px #ffffff);
+}
+
+/* comment */
+.comment {
+  display: flex;
+  gap: .5rem;
+}
+
+.div-tb {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.div-tbs:hover {
+  color: #0099ff;
+  filter: drop-shadow(0 0 2px #ffffff);
+}
+
+/* phóng to head */
+.h {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("share.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+  display: none;
+}
+
+/* phóng to avatar */
+.a {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("avatar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  display: none;
+}
+
+/* toggle */
+.otg {
+  display: block;
+}
+
+/* thông báo like */
+.tblk
+ {
+   position: fixed;
+   top: 1rem;
+   left: 1rem;
+   background: #FFFF99;
+   border: 2px solid #FFFF99;
+   border-radius: 10px;
+   padding: 5px;
+   color: #000;
+   display: none;
+ }
+ 
+ .ov {
+   overflow: hidden;
+ }
+ 
+ .block {
+   display: block;
+ }
+ 
+ .sw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yt {
+  display: block;
+}
+
+#data {
+  margin-top: 1.5rem;
+}
+
+#tab {
+  width: 100vw;
+  height: auto;
+  background: white;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.avt {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: .5rem;
+}
+
+.avt > div > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top: .5rem;
+  margin-left: .5rem;
+}
+
+.avt > .names {
+  margin-top: 1rem;
+}
+
+.avt > .names > span {
+  font: 7;
+  font-size: 13px;
+  font-family: tahoma;
+  font-weight: 7000;
+}
+
+.igm {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.igm > img {
+  width: 150px;
+  height: 150px;
+}
+
+/* icon btn */
+
+.iconBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 40px;
+}
+
+/*.iconlike:hover, .iconment:hover, .iconshare:hover {
+  color: #0099ff;
+  filter: drop-shadow(0 0 2px #ffffff);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}*/
+
+.content-container {
+  margin-left: 1rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+
+.btnLike:hover {
+  color: #0099ff;
+  filter: drop-shadow(0 0 2px #ffffff);
+  cursor: pointer;
+}
+
+/* sử lý bình luận */
+.from-binhluan {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 50;
+  display: none;
+}
+
+#div {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.input {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.input > img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 1000%;
+  margin-top: 1.5rem;
+  margin-left: .5rem;
+}
+
+.input > input {
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1rem;
+  background: white;
+}
+
+.input > b {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.cf {
+  overflow: hidden;
+}
+
+.item {
+  margin-top: 1.5rem;
+  margin-left: .2rem;
+}
+
+.item1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.item1 > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.bx {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 2px ghostwhite;
+  background: ghostwhite;
+}
+
+.bx > b {
+  display: block;
+  padding-top: .5rem;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+}
+
+.bx > span {
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+.fm {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+  padding-left: 4rem;
+}
+
+.xmark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.xmark > h3, .xmark>i{
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.xmark>i {
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.ed {
+  display: block;
+}
+
+.sx {
+  display: block;
+}
