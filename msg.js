@@ -11,16 +11,6 @@ const w = [
     igm2: "share.png",
     igm3: "share.png",
   },
-  {
-    avatars: "avatar.png",
-    nametab: "Nguyễn Thị Thảo Nhi",
-    parts: "hôm nay lúc 6:30 pm",
-    texts: "Xin chào các bạn, mình giới thiệu qua về mình, mình là Nguyễn Thị Thảo Nhi làm lập trình viên có 10 năm kinh nghiệm trong nghành công nghệ thông tin này, bạn đang cần 1 người code dự án của bạn website, game, app tool phần mềm thì hãy liên hệ cho mình ngay để triển khai dự án project đó nhé!",
-    igm0: "share.png",
-    igm1: "share.png",
-    igm2: "share.png",
-    igm3: "share.png",
-  }
 ];
 
 function Msg(){
